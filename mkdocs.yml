@@ -1,3 +1,10 @@
 site_name: docs
-site_description: This is my documentation site.
-theme: readthedocs
+site_description: mkdocs 搭建学习
+site_url: https://aitaoya.github.io/docs/
+repo_name: aitaoya/docs
+repo_url: https://github.com/aitaoya
+plugins:
+- search
+- glightbox
+- awesome-pages
+theme: Bootstrap
