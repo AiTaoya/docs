@@ -7,4 +7,55 @@ plugins:
 - search
 - glightbox
 - awesome-pages
-theme: Bootstrap
+
+theme:
+  name: Bootstrap
+  custom_dir: './overrides/'
+  logo: 'assets/images/kubean_logo_1.svg'
+  favicon: 'assets/images/kubean_logo_1.svg'
+  language: zh
+  font:
+    code: Source Sans Pro
+  palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: indigo
+    accent: amber
+    toggle:
+      icon: material/brightness-7
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: white
+    accent: amber
+    toggle:
+      icon: material/brightness-4
+      name: Switch to dark mode
+  features:
+  - search.suggest
+  - search.highlight
+  - content.tabs.link
+  - content.code.copy
+  - navigation.footer
+  icon:
+    repo: fontawesome/brands/github-alt
+
+nav:
+- 简介: index.md
+- 快速入门:
+  - usage/what.md
+
+markdown_extensions:
+- toc:
+    permalink: true
+- markdown.extensions.codehilite:
+    guess_lang: false
+- admonition
+- codehilite
+- extra
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- attr_list
+- md_in_html
+- attr_list
